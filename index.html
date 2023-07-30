@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music play</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="contaner">
+        <div class="music-player">
+            <nav>
+                <div class="cicle">
+                    <span class="material-symbols-outlined" style="color: beige; scale: 1.5;">
+                        chevron_left
+                        </span>
+                </div>
+                <div class="cicle">
+                    <span class="material-symbols-outlined" style="color: beige; scale: 1.5;">
+                        menu
+                        </span>
+                </div>
+            </nav>
+            <img src="https://helios-i.mashable.com/imagery/articles/054ysyq6eCq0K4uQC8G95Ir/hero-image.fill.size_1200x1200.v1623374694.jpg" alt="">
+            <h1>Music</h1>
+            <p>Music singer</p>
+
+            <audio  id="song">
+                <source src="/song.mp3">
+            </audio>
+            <input type="range" value="0" min="0" max="100" id="progress">
+            <div class="controls">
+                <span class="material-symbols-outlined" style="color: beige; scale: 1.5; background-color:#353ab2;border-radius: 50%;padding: 5px;">
+                    arrow_back_ios
+                </span>
+
+                <span class="material-symbols-outlined" id="ctrlIcon" onclick="playPause()" style="color: beige; scale: 2; background-color:#353ab2;border-radius: 50%;padding: 5px;">
+                    play_circle
+                </span>
+
+                <span class="material-symbols-outlined" style="color: beige; scale: 1.5;margin-left: 10px; background-color:#353ab2;border-radius: 50%;padding: 5px;">
+                    arrow_forward_ios
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
